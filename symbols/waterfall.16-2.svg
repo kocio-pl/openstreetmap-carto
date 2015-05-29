@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="100%"
+   height="100%"
+   viewBox="0 0 16 16"
+   id="svg2"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="waterfall.16-2.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1871"
+     inkscape:window-height="1056"
+     id="namedview9"
+     showgrid="true"
+     inkscape:zoom="54.8125"
+     inkscape:cx="8"
+     inkscape:cy="8.7297605"
+     inkscape:window-x="49"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3005" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <rect
+     width="16"
+     height="16"
+     x="0"
+     y="0"
+     id="canvas"
+     style="fill:none;stroke:none;visibility:hidden" />
+  <path
+     id="waterfall"
+     style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+     d="M 4,11 C 3.4661017,11 2.5077148,12.5 2,12.5 L 2,14 c 0.5371839,0 1.5254237,-1.5 2,-1.5 0.5042373,0 1.4661017,1.5 2,1.5 0.4755023,0 1.4922852,-1.5 2,-1.5 0.5042373,0 1.5217305,1.5 2,1.5 0.504237,0 1.525424,-1.5 2,-1.5 0.474576,0 1.495763,1.5 2,1.5 l 0,-1.5 c -0.415254,0 -1.466102,-1.529661 -2,-1.5 -0.47827,0 -1.465278,1.5 -2,1.5 C 9.5550847,12.5 8.5042373,11 8,11 7.4957627,11 6.4459029,12.5 6,12.5 5.5244977,12.5 4.5338983,11 4,11 z M 2.350057,2 2.386545,3.4506842 C 4.1494222,3.4506842 5,3.5748589 5,5 l 0,3 c 0,2 3.1173962,2 4,2 0,0 -2,0 -2,-2 L 7,5 C 7,4.139041 5.9493408,2.2714056 5,2 l 1.4378563,0 1,1.25 C 9,3.2680212 9,3.5504764 9,5 l 0,3 c 0,1.9999999 3.117396,2 4,2 0,0 -2,0 -2,-2 L 11,5 C 11,2 9.4108869,2 8.5282832,2 z"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="sccssssscccsssscccscsscccsscsssc" />
+</svg>
