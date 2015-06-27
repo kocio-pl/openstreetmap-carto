@@ -959,14 +959,18 @@
       text-name: "[name]";
       text-fill: @amenity-brown;
       text-size: 10;
-      text-dy: 11;
       text-face-name: @bold-fonts;
       text-halo-radius: 1;
       text-halo-fill: rgba(255,255,255,0.6);
       text-wrap-width: @standard-wrap-width;
       text-placement: interior;
+      text-placement-type: simple;
+      text-placements: "S,N,W,E";
+      text-dy: 11;
+      text-dx: 11;
       [feature = 'amenity_bar']{
         text-dy: 13;
+	text-dx: 13;
       }
     }
   }
@@ -1899,13 +1903,16 @@
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 10;
-      text-dy: 12;
       text-fill: #939;
       text-face-name: @book-fonts;
       text-halo-radius: 1.5;
       text-halo-fill: rgba(255, 255, 255, 0.6);
       text-wrap-width: @standard-wrap-width;
       text-placement: interior;
+      text-placement-type: simple;
+      text-placements: "S,N,W,E";
+      text-dy: 12;
+      text-dx: 12;
     }
   }
 
