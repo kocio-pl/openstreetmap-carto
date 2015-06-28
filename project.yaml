@@ -143,8 +143,13 @@ Layer:
           FROM (SELECT
               way, COALESCE(name, '') AS name,
               ('aeroway_' || (CASE WHEN aeroway IN ('apron', 'aerodrome') THEN aeroway ELSE NULL END)) AS aeroway,
+<<<<<<< HEAD
               ('amenity_' || (CASE WHEN amenity IN ('parking', 'bicycle_parking', 'university', 'college', 'school', 'hospital', 'kindergarten', 'grave_yard', 'prison', 'place_of_worship', 'clinic') THEN amenity ELSE NULL END)) AS amenity,
               ('landuse_' || (CASE WHEN landuse IN ('quarry', 'vineyard', 'orchard', 'cemetery', 'residential', 'garages', 'meadow', 'grass', 'allotments', 'forest', 'farmyard', 'farm', 'farmland', 'greenhouse_horticulture', 'recreation_ground', 'conservation', 'village_green', 'retail', 'industrial', 'railway', 'commercial', 'brownfield', 'landfill', 'construction') THEN landuse ELSE NULL END)) AS landuse,
+=======
+              ('amenity_' || (CASE WHEN amenity IN ('parking', 'bicycle_parking', 'university', 'college', 'school', 'hospital', 'clinic', 'kindergarten', 'grave_yard', 'prison', 'place_of_worship') THEN amenity ELSE NULL END)) AS amenity,
+              ('landuse_' || (CASE WHEN landuse IN ('quarry', 'vineyard', 'orchard', 'cemetery', 'residential', 'garages', 'meadow', 'grass', 'allotments', 'forest', 'farmyard', 'farm', 'farmland', 'recreation_ground', 'conservation', 'village_green', 'retail', 'industrial', 'railway', 'commercial', 'brownfield', 'landfill', 'construction') THEN landuse ELSE NULL END)) AS landuse,
+>>>>>>> bfb8e8b9429702cae30f61794368b109596ddc03
               ('leisure_' || (CASE WHEN leisure IN ('swimming_pool', 'playground', 'park', 'recreation_ground', 'common', 'garden', 'golf_course', 'miniature_golf', 'picnic_table', 'sports_centre', 'stadium', 'pitch', 'track') THEN leisure ELSE NULL END)) AS leisure,
               ('military_' || (CASE WHEN military IN ('danger_area') THEN military ELSE NULL END)) AS military,
               ('natural_' || (CASE WHEN "natural" IN ('beach', 'heath', 'grassland', 'wood', 'sand', 'scree', 'shingle', 'bare_rock', 'scrub') THEN "natural" ELSE NULL END)) AS "natural",
@@ -159,7 +164,11 @@ Layer:
             WHERE (landuse IS NOT NULL
               OR leisure IS NOT NULL
               OR aeroway IN ('apron', 'aerodrome')
+<<<<<<< HEAD
               OR amenity IN ('parking', 'bicycle_parking', 'university', 'college', 'school', 'hospital', 'kindergarten', 'grave_yard', 'place_of_worship', 'prison', 'clinic')
+=======
+              OR amenity IN ('parking', 'bicycle_parking', 'university', 'college', 'school', 'hospital', 'clinic', 'kindergarten', 'grave_yard', 'place_of_worship', 'prison')
+>>>>>>> bfb8e8b9429702cae30f61794368b109596ddc03
               OR military IN ('danger_area')
               OR "natural" IN ('beach', 'heath', 'mud', 'marsh', 'wetland', 'grassland', 'wood', 'sand', 'scree', 'shingle', 'bare_rock', 'scrub')
               OR power IN ('station', 'sub_station', 'substation', 'generator')
