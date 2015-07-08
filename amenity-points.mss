@@ -32,14 +32,14 @@
 
   [feature = 'amenity_atm'][zoom >= 17] {
     marker-file: url('symbols/atm.16.svg');
-    marker-fill: @amenity-brown;
+    marker-fill: @shop-icon;
     marker-placement: interior;
     marker-clip: false;
   }
 
   [feature = 'amenity_bank'][zoom >= 17] {
     marker-file: url('symbols/bank.16.svg');
-    marker-fill: @amenity-brown;
+    marker-fill: @shop-icon;
     marker-placement: interior;
     marker-clip: false;
   }
@@ -1619,7 +1619,7 @@
     text-size: 10;
     [feature = 'amenity_bank'] { text-dy: 9; }
     [feature = 'amenity_atm']  { text-dy: 10; }
-    text-fill: @amenity-brown;
+    text-fill: @shop-icon;
     text-halo-radius: 1;
     text-halo-fill: rgba(255,255,255,0.6);
     text-wrap-width: @standard-wrap-width;
