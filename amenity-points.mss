@@ -114,10 +114,6 @@
     marker-clip: false;
   }
 
-  [feature = 'highway_ford'][zoom >= 16] {
-    point-file: url('symbols/transport_ford.p.16.png');
-    point-placement: interior;
-  }
 
   [feature = 'tourism_caravan_site'][zoom >= 16] {
     marker-file: url('symbols/caravan_park.16.svg');
@@ -126,12 +122,12 @@
     marker-fill: @transportation-icon;
   }
 
-  [feature = 'amenity_car_sharing'][zoom >= 16] {
+  [feature = 'amenity_car_sharing'][zoom >= 18] {
     point-file: url('symbols/car_share.p.16.png');
     point-placement: interior;
   }
 
-  [feature = 'amenity_car_rental'][zoom >= 16] {
+  [feature = 'amenity_car_rental'][zoom >= 17] {
     marker-file: url('symbols/rental_car.16.svg');
     marker-fill: @transportation-icon;
     marker-placement: interior;
@@ -179,6 +175,13 @@
   [feature = 'amenity_hospital'][zoom >= 15] {
     marker-file: url('symbols/hospital.16.svg');
     marker-fill: @health-color;
+    marker-placement: interior;
+    marker-clip: false;
+  }
+
+  [feature = 'amenity_school'][zoom >= 17] {
+    marker-file: url('symbols/school-14.svg');
+    marker-fill: @amenity-brown;
     marker-placement: interior;
     marker-clip: false;
   }
@@ -1084,7 +1087,7 @@
   }
 
   [feature = 'amenity_car_rental'][zoom >= 17],
-  [feature = 'amenity_car_sharing'][zoom >= 17],
+  [feature = 'amenity_car_sharing'][zoom >= 18],
   [feature = 'amenity_bicycle_rental'][zoom >= 17],
   [feature = 'leisure_slipway'][zoom >= 17] {
     text-name: "[name]";
@@ -1127,6 +1130,7 @@
 
 
   [feature = 'amenity_police'][zoom >= 17],
+  [feature = 'amenity_community_centre'][zoom >= 17],
   [feature = 'amenity_fire_station'][zoom >= 17],
   [feature = 'amenity_drinking_water'][zoom >= 17],
   [feature = 'amenity_recyling'][zoom >= 17],
@@ -1857,8 +1861,8 @@
       text-size: @landcover-font-size;
       [way_pixels > 12000] { text-size: @landcover-font-size-big; }
       [way_pixels > 48000] { text-size: @landcover-font-size-bigger; }
-      text-fill: darken(@educational_areas_and_hospital, 70%);
-      text-face-name: @landcover-face-name;
+      text-fill: @amenity-brown;
+      text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-halo-fill: rgba(255,255,255,0.6);
       text-wrap-width: @landcover-wrap-width-size;
