@@ -84,8 +84,10 @@
   }
 
   [feature = 'amenity_bus_station'][zoom >= 16] {
-    point-file: url('symbols/bus_station.n.16.png');
-    point-placement: interior;
+    marker-file: url('symbols/bus_station.14.svg');
+    marker-fill: @transportation-icon;
+    marker-placement: interior;
+    marker-clip: false;
   }
 
   [feature = 'amenity_taxi'][zoom >= 17] {
