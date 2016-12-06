@@ -1,4 +1,30 @@
-## [Unreleased](https://github.com/gravitystorm/openstreetmap-carto/compare/v2.43.0...master)
+## [Unreleased](https://github.com/gravitystorm/openstreetmap-carto/compare/v2.45.1...master) 
+### Major Changes
+- Mapnik 3 is now required
+- CartoCSS 0.16.x is now required
+- Official Tilemill support is dropped
+
+## [v2.45.1](https://github.com/gravitystorm/openstreetmap-carto/compare/v2.45.0...v2.45.1) - 2016-12-03
+### Changes
+- Bug fix for tobacco shop and memorial icons
+
+## [v2.45.0](https://github.com/gravitystorm/openstreetmap-carto/compare/v2.44.1...v2.45.0) - 2016-11-28
+### Changes
+- Render all shops without a specific icon as a dot, not just a whitelist
+- Scrub pattern change to random
+- Change pitch and track color
+- Railway stations rendering as major buildings
+- Rendering the name of man_made=bridge inside the polygon
+- Documentation updates (including cartography design goals and icon design guidelines)
+- Icons general code cleaning
+- Various bug fixes
+
+## [v2.44.1](https://github.com/gravitystorm/openstreetmap-carto/compare/v2.44.0...v2.44.1) - 2016-10-12
+### Changes
+- Bug fixes to low zoom place rendering changes
+- Documentation improvements for fonts and non-latin rendering
+
+## [v2.44.0](https://github.com/gravitystorm/openstreetmap-carto/compare/v2.43.0...v2.44.0) - 2016-09-26
 ### Major Changes
 - Rendering of restricted access roads and paths significantly changed
 - Changed to use Noto fonts for all languages
@@ -9,6 +35,9 @@
 ### Changes
 - A code of conduct adopted, based on the Go code of conduct
 - Adjustments to city wall rendering
+- Revised low zoom place rendering
+- Fixed oneway arrows on unnamed roads
+- Render both house name and number if address has both
 
 ## [v2.43.0](https://github.com/gravitystorm/openstreetmap-carto/compare/v2.42.0...v2.43.0) - 2016-09-05
 ### Changes
