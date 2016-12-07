@@ -1,4 +1,5 @@
 @admin-boundaries: #ac46ac;
+@nature-reserve-boundaries: darken(#cdebb0,40%);
 
 /* For performance reasons, the admin border layers are split into three groups
 for low, middle and high zoom levels.
@@ -194,18 +195,18 @@ overlapping borders correctly.
     [zoom < 10] {
       ::fill {
         opacity: 0.05;
-        polygon-fill: green;
+        polygon-fill: @nature-reserve-boundaries;
       }
     }
     a/line-width: 1;
     a/line-offset: -0.5;
-    a/line-color: green;
+    a/line-color: @nature-reserve-boundaries;
     a/line-opacity: 0.15;
     a/line-join: round;
     a/line-cap: round;
     b/line-width: 2;
     b/line-offset: -1;
-    b/line-color: green;
+    b/line-color: @nature-reserve-boundaries;
     b/line-opacity: 0.15;
     b/line-join: round;
     b/line-cap: round;
