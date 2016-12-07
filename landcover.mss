@@ -1,8 +1,8 @@
 // --- Parks, woods, other green things ---
 
-@grass: #cdebb0; // also meadow, common, garden, village_green
+@grass: lighten(#cdebb0,5%); // also meadow, common, garden, village_green
 @scrub: #b5e3b5;
-@forest: #add19e;       // Lch(80,30,135)
+@forest: darken(#cdebb0,0%);
 @forest-text: #46673b;  // Lch(40,30,135)
 @park: #c8facc;         // Lch(94,30,145) also recreation_ground
 @orchard: #aedfa3;
