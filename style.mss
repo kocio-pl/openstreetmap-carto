@@ -271,7 +271,7 @@ For a considerable number of labels this style will make no difference to the re
 
                 "Unifont Medium", "unifont Medium", "Unifont Upper Medium";
 
-@water-color: saturate(darken(#aad3df,10%),20%);
+@water-color: saturate(darken(#aad3df,30%),30%);
 @land-color: #f2efe9;
 
 @standard-halo-radius: 1;
