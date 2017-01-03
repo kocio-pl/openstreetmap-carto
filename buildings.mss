@@ -29,9 +29,9 @@
     [building = 'collapsed'],
     [building = 'ger'],
     [building = 'ruins'] {
-      polygon-fill: lighten(@building-fill, 4%);
+      polygon-fill: lighten(@building-fill, 3%);
       [zoom >= 15] {
-        line-color: @building-line;
+        line-color: lighten(@building-line, 3%);
         line-width: .75;
         line-clip: false;
       }
