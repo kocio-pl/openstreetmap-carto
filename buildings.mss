@@ -19,6 +19,23 @@
       line-width: .75;
       line-clip: false;
     }
+    [building = 'garage'],
+    [building = 'shed'],
+    [building = 'garages'],
+    [building = 'construction'],
+    [building = 'farm_auxiliary'],
+    [building = 'greenhouse'],
+    [building = 'service'],
+    [building = 'collapsed'],
+    [building = 'ger'],
+    [building = 'ruins'] {
+      polygon-fill: lighten(@building-fill, 4%);
+      [zoom >= 15] {
+        line-color: @building-line;
+        line-width: .75;
+        line-clip: false;
+      }
+    }
   }
 }
 
