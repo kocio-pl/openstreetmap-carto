@@ -315,7 +315,9 @@
     marker-clip: false;
   }
 
-  [feature = 'man_made_mast'][zoom >= 17] {
+  [feature = 'man_made_mast'][zoom >= 17],
+  [feature = 'man_made_tower'][zoom >= 17],
+  [feature = 'man_made_communications_tower'][zoom >= 16] {
     marker-file: url('symbols/communications.svg');
     marker-fill: @man-made-icon;
     marker-placement: interior;
@@ -1341,7 +1343,9 @@
   [feature = 'historic_wayside_cross'][zoom >= 17],
   [feature = 'natural_cave_entrance'][zoom >= 15],
   [feature = 'man_made_mast'][zoom >= 17],
-  [feature = 'man_made_water_tower'][zoom >= 17] {
+  [feature = 'man_made_water_tower'][zoom >= 17],
+  [feature = 'man_made_tower'][zoom >= 17],
+  [feature = 'man_made_communications_tower'][zoom >= 16] {
     text-name: "[name]";
     text-size: @standard-text-size;
     text-fill: black;
@@ -1353,7 +1357,11 @@
     [feature = 'historic_wayside_cross'] {
       text-dy: 6;
     }
-    [feature = 'man_made_mast'] { text-dy: 10; }
+    [feature = 'man_made_mast'],
+    [feature = 'man_made_tower'],
+    [feature = 'man_made_communications_tower'] {
+      text-dy: 10;
+    }
     text-face-name: @standard-font;
     text-halo-radius: @standard-halo-radius;
     text-halo-fill: @standard-halo-fill;
