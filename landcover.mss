@@ -291,7 +291,7 @@
 
   [feature = 'landuse_forest'],
   [feature = 'natural_wood'] {
-    [zoom >= 8] {
+    [zoom >= 0] {
       polygon-fill: @forest;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
@@ -313,7 +313,7 @@
 
   [feature = 'landuse_farmland'],
   [feature = 'landuse_greenhouse_horticulture'] {
-    [zoom >= 10] {
+    [zoom >= 0] {
       polygon-fill: @farmland;
       [zoom >= 16] {
         line-width: .5;

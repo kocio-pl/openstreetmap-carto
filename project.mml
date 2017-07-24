@@ -114,7 +114,7 @@ Layer:
           ) AS features
         ) AS landcover_low_zoom
     properties:
-      minzoom: 7
+      minzoom: 0
       maxzoom: 9
   - id: landcover
     geometry: polygon
