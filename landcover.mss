@@ -66,7 +66,7 @@
 
 #landcover-low-zoom[zoom < 1],
 #landcover[zoom >= 1] {
-  ::low-zoom[zoom < 1]                   { image-filters: scale-hsla(0,1,0,1,0.6,0.95,0,1); }
+  ::low-zoom[zoom < 10]                   { image-filters: scale-hsla(0,1,0,1,0.6,0.95,0,1); }
   ::lower-mid-zoom[zoom >= 10][zoom < 11] { image-filters: scale-hsla(0,1,0,1,0.6,0.95,0,1); }
   ::mid-zoom[zoom >= 11][zoom < 12]       { image-filters: scale-hsla(0,1,0,1,0.5,0.96,0,1); }
   ::upper-mid-zoom[zoom >= 12][zoom < 13] { image-filters: scale-hsla(0,1,0,1,0.4,0.97,0,1); }
