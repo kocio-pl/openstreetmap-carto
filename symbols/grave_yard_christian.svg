@@ -5,11 +5,11 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg4"
-   viewBox="0 0 32 32"
-   height="32"
+   version="1.1"
    width="32"
-   version="1.1">
+   height="32"
+   viewBox="0 0 32 32"
+   id="svg4">
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -25,14 +25,14 @@
   <defs
      id="defs8" />
   <rect
-     style="visibility:hidden;fill:none;stroke:none"
-     id="canvas"
-     y="0"
-     x="0"
+     width="32"
      height="32"
-     width="32" />
+     x="0"
+     y="0"
+     id="canvas"
+     style="visibility:hidden;fill:none;stroke:none" />
   <path
-     id="christian"
-     d="M 3 0 L 3 2 L 1 2 L 1 4 L 3 4 L 3 8 L 5 8 L 5 4 L 7 4 L 7 2 L 5 2 L 5 0 L 3 0 z "
-     style="opacity:1;fill:#88b78e;fill-opacity:1;fill-rule:evenodd" />
+     style="opacity:1;fill:#88b78e;fill-opacity:1;fill-rule:evenodd"
+     d="M 4,0 V 4 H 0 v 3 h 4 v 8 H 7 V 7 h 4 V 4 H 7 V 0 Z"
+     id="christian" />
 </svg>
