@@ -1038,13 +1038,13 @@
   }
 
   [feature = 'barrier_bollard'],
-  [feature = 'barrier_block'] {
+  [feature = 'barrier_block'],
+  [feature = 'highway_street_lamp'][zoom >= 19] {
     [zoom >= 16] {
       marker-width: 3;
       marker-line-width: 0;
       marker-fill: #7d7c7c;
       marker-placement: interior;
-
       [zoom >= 18] {
         marker-width: 4;
       }
