@@ -78,17 +78,22 @@
 }
 
 #water-lines-low-zoom {
-  [waterway = 'river'][zoom >= 8][zoom < 12] {
+  [waterway = 'river'][zoom >= 0][zoom < 12] {
     [intermittent = 'yes'] {
+      line-color: orange;
       line-dasharray: 8,4;
       line-cap: butt;
       line-join: round;
       line-clip: false;
     }
+    [distance > 100],
+    [order = "1"] { 
+      line-color: red;
+    }
     line-color: @water-color;
-    line-width: 0.7;
-    [zoom >= 9] { line-width: 1.2; }
-    [zoom >= 10] { line-width: 1.6; }
+    line-width: 1.4;
+    [zoom >= 9] { line-width: 2.4; }
+    [zoom >= 10] { line-width: 3.2; }
   }
 }
 

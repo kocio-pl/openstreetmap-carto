@@ -201,12 +201,14 @@ Layer:
         (SELECT
             way,
             waterway,
-            tags->'intermittent' as intermittent
+            tags->'intermittent' as intermittent,
+            tags->'distance' as distance,
+            tags->'order:classic' as order
           FROM planet_osm_line
           WHERE waterway = 'river'
         ) AS water_lines_low_zoom
     properties:
-      minzoom: 8
+      minzoom: 0
       maxzoom: 11
   - id: icesheet-poly
     geometry: polygon
