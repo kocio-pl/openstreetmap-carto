@@ -293,7 +293,8 @@
   }
 
   [feature = 'landuse_forest'],
-  [feature = 'natural_wood'] {
+  [feature = 'natural_wood'],
+  [feature = 'landcover_trees'] {
     [zoom >= 8] {
       polygon-fill: @forest;
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
@@ -330,6 +331,7 @@
   [feature = 'landuse_meadow'],
   [feature = 'natural_grassland'],
   [feature = 'landuse_grass'],
+  [feature = 'landcover_grass'],
   [feature = 'landuse_recreation_ground'],
   [feature = 'landuse_village_green'],
   [feature = 'leisure_common'],
@@ -688,7 +690,7 @@
     }
   }
 
-  //Also landuse = forest, converted in the SQL
+  //Also landuse = forest and landcover = trees, converted in the SQL
   [natural = 'wood'][zoom >= 13]::wood {
     polygon-pattern-file: url('symbols/leaftype_unknown.svg'); // Lch(55,30,135)
     [leaf_type = "broadleaved"] { polygon-pattern-file: url('symbols/leaftype_broadleaved.svg'); }

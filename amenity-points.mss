@@ -1393,6 +1393,7 @@
   [feature = 'landuse_military'],
   [feature = 'natural_wood'],
   [feature = 'landuse_forest'],
+  [feature = 'landcover_trees'],
   [feature = 'boundary_national_park'],
   [feature = 'leisure_nature_reserve'] {
     [zoom >= 8][way_pixels > 3000][is_building = 'no'],
@@ -1419,7 +1420,8 @@
         text-fill: darken(@military, 40%);
       }
       [feature = 'natural_wood'],
-      [feature = 'landuse_forest'] {
+      [feature = 'landuse_forest'],
+      [feature = 'landcover_trees'] {
         text-fill: @forest-text;
       }
       [feature = 'boundary_national_park'],
@@ -1498,6 +1500,7 @@
   [feature = 'landuse_meadow'],
   [feature = 'natural_grassland'],
   [feature = 'landuse_grass'],
+  [feature = 'landcover_grass'],
   [feature = 'landuse_allotments'],
   [feature = 'landuse_farmyard'],
   [feature = 'landuse_farm'],
@@ -1584,7 +1587,8 @@
       }
       [feature = 'landuse_meadow'],
       [feature = 'natural_grassland'],
-      [feature = 'landuse_grass'] {
+      [feature = 'landuse_grass'],
+      [feature = 'landcover_grass'] {
         text-fill: darken(@grass, 50%);
       }
       [feature = 'landuse_allotments'] {
