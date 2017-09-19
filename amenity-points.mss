@@ -12,7 +12,7 @@
 @gastronomy: @amenity-brown;
 @memorials: @amenity-brown;
 @man-made-icon: #555;
-@landform-color: #d08f55;
+@landform-color: #ffa500;
 @leisure-green: darken(@park, 60%);
 
 @landcover-font-size: 10;
