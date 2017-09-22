@@ -1958,6 +1958,7 @@ Layer:
             tags->'operator' as operator,
             tags->'icao' as icao,
             tags->'iata' as iata,
+            tags->'water' as water,
             ref,
             way_area,
             CASE WHEN building = 'no' OR building IS NULL THEN 'no' ELSE 'yes' END AS is_building
@@ -1976,6 +1977,7 @@ Layer:
               OR military IN ('danger_area')
               OR historic IN ('memorial', 'monument', 'archaeological_site')
               OR tags->'memorial' IN ('plaque')
+              OR tags->'water' IN ('lake')
               OR highway IN ('services', 'rest_area', 'bus_stop', 'elevator')
               OR power IN ('plant', 'station', 'generator', 'sub_station', 'substation')
               OR boundary IN ('national_park')
@@ -1986,7 +1988,7 @@ Layer:
           ORDER BY way_area DESC
         ) AS text_poly
     properties:
-      minzoom: 10
+      minzoom: 6
   - id: text-line
     geometry: linestring
     <<: *extents

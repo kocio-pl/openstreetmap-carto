@@ -313,12 +313,12 @@
   }
 }
 
-.text[zoom >= 10] {
+.text[zoom >= 6] {
   [feature = 'natural_water'],
   [feature = 'landuse_reservoir'],
   [feature = 'landuse_basin'],
   [feature = 'waterway_dock'] {
-    [zoom >= 10][way_pixels > 3000],
+    [zoom >= 6][way_pixels > 3000],
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 10;
