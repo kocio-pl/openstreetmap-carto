@@ -1044,6 +1044,15 @@
     marker-clip: false;
   }
 
+  [feature = 'barrier_toll_booth']::barrier {
+    [zoom >= 16] {
+      marker-file: url('symbols/toll_booth.svg');
+      marker-fill: @transportation-icon;
+      marker-placement: interior;
+      marker-clip: false;
+    }
+  }
+
   [feature = 'barrier_gate']::barrier {
     [zoom >= 16] {
       marker-file: url('symbols/gate.svg');
@@ -1185,7 +1194,8 @@
 
   [feature = 'amenity_parking'][zoom >= 10][way_pixels > 900],
   [feature = 'amenity_bicycle_parking'][zoom >= 10][way_pixels > 900],
-  [feature = 'amenity_motorcycle_parking'][zoom >= 10][way_pixels > 900] {
+  [feature = 'amenity_motorcycle_parking'][zoom >= 10][way_pixels > 900],
+  [feature = 'barrier_toll_booth']::barrier[zoom >= 16] {
     text-name: "[name]";
     text-size: @standard-font-size;
     text-wrap-width: @standard-wrap-width;
