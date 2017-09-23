@@ -588,6 +588,13 @@
     marker-clip: false;
   }
 
+  [feature = 'historic_ruins'][zoom >= 16] {
+    marker-file: url('symbols/ruins.svg');
+    marker-fill: @culture;
+    marker-placement: interior;
+    marker-clip: false;
+  }
+
   [feature = 'shop'] {
     [shop != 'mall'][zoom >= 17],
     [shop = 'supermarket'][zoom >= 16],
@@ -1150,7 +1157,8 @@
   [feature = 'amenity_cinema'],
   [feature = 'amenity_arts_centre'],
   [feature = 'amenity_community_centre'],
-  [feature = 'historic_archaeological_site'] {
+  [feature = 'historic_archaeological_site'],
+  [feature = 'historic_ruins'] {
     [zoom >= 17] {
       text-name: "[name]";
       text-size: @standard-font-size;
