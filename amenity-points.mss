@@ -10,7 +10,7 @@
 @health-color: #da0092;
 @amenity-brown: #734a08;
 @gastronomy: @amenity-brown;
-@memorials: @amenity-brown;
+@memorials: @man-made-icon;
 @culture: @amenity-brown;
 @public-service: @amenity-brown;
 @man-made-icon: #555;
