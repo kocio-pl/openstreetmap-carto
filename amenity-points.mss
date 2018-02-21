@@ -256,8 +256,7 @@
   }
 
   [feature = 'tourism_guest_house'][zoom >= 17] {
-    marker-file: url('symbols/guest_house.svg');
-    marker-fill: @accommodation-icon;
+    marker-file: url('symbols/dog_park.png');
     point-placement: interior;
     marker-clip: false;
   }
@@ -934,8 +933,7 @@
   }
 
   [feature = 'leisure_miniature_golf'][zoom >= 17] {
-    marker-file: url('symbols/miniature_golf.svg');
-    marker-fill: @leisure-green;
+    marker-file: url('symbols/danger_red_hatch.png');
     point-placement: interior;
     marker-clip: false;
   }
