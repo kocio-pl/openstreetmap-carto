@@ -1544,7 +1544,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     }
 
     [feature = 'highway_platform'] {
-      [zoom >= 16] {
+      [zoom >= 17] {
         line-join: round;
         line-width: 6;
         line-color: grey;
@@ -2041,7 +2041,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
     }
 
     [feature = 'railway_platform'] {
-      [zoom >= 16] {
+      [zoom >= 17] {
         line-join: round;
         line-width: 6;
         line-color: grey;
@@ -2331,7 +2331,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
 
   [feature = 'highway_platform'],
   [feature = 'railway_platform'] {
-    [zoom >= 16] {
+    [zoom >= 17] {
       line-color: grey;
       line-width: 2;
       line-cap: round;
@@ -2368,7 +2368,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
 
   [feature = 'highway_platform'],
   [feature = 'railway_platform'] {
-    [zoom >= 16] {
+    [zoom >= 17] {
       polygon-fill: #bbbbbb;
       polygon-gamma: 0.65;
     }
