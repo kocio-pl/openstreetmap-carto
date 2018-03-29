@@ -1066,7 +1066,7 @@
      marker-clip: false;
    }
 
-  [feature = 'leisure_beach_resort'][zoom >= 17] {
+  [feature = 'leisure_beach_resort'][zoom >= 16] {
      marker-file: url('symbols/beach_resort.svg');
      marker-fill: @leisure-green;
      marker-placement: interior;
