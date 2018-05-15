@@ -12,21 +12,22 @@
   [zoom >= 13] {
     [building != 'roof'] {
       polygon-fill: @building-low-zoom;
+      polygon-clip: false;
     }
     [building = 'roof'] {
       polygon-pattern-file: url('symbols/building_roof_dark.png');
     }
-    polygon-clip: false;
     [zoom >= 15] {
       line-color: @building-line;
+      line-width: .75;
+      line-clip: false;
       [building != 'roof'] {
         polygon-fill: @building-fill;
+        polygon-clip: false;
       }
       [building = 'roof'] {
         polygon-pattern-file: url('symbols/building_roof.png');
       }
-      line-width: .75;
-      line-clip: false;
     }
   }
 }
