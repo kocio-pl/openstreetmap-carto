@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 
 # Style dependencies
 RUN apt-get update && apt-get install --no-install-recommends -y \
@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 
 # Node.js 6.x LTS
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash \
-    && apt-get install --no-install-recommends -y nodejs \
+    && apt-get install --no-install-recommends -y nodejs npm \
     && rm -rf /var/lib/apt/lists/*
 
 # Kosmtik with plugins
