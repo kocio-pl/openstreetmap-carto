@@ -53,7 +53,7 @@
     text-face-name: @oblique-fonts;
     text-halo-fill: @standard-halo-fill;
     text-halo-radius: @standard-halo-radius * 1.5;
-    text-placement: interior;
+    text-placement: grid;
     [zoom >= 7] {
       text-size: 11;
       text-wrap-width: 50; // 4.5 em
