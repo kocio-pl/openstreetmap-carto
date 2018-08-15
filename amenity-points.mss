@@ -9,7 +9,7 @@
 @airtransport: #8461C4; //also ferry_terminal
 @health-color: #da0092;
 @amenity-brown: #734a08;
-@gastronomy: @amenity-brown;
+@gastronomy: #cc6600;
 @memorials: @amenity-brown;
 @culture: @amenity-brown;
 @public-service: @amenity-brown;
