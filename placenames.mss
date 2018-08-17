@@ -56,6 +56,7 @@
     text-placement: grid;
     text-grid-cell-width: 1;
     text-grid-cell-height: 1;
+    text-repeat-distance: 100000;
     [zoom >= 7] {
       text-size: 11;
       text-wrap-width: 50; // 4.5 em
