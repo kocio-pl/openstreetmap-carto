@@ -54,6 +54,8 @@
     text-halo-fill: @standard-halo-fill;
     text-halo-radius: @standard-halo-radius * 1.5;
     text-placement: grid;
+    text-grid-cell-width: 1;
+    text-grid-cell-height: 1;
     [zoom >= 7] {
       text-size: 11;
       text-wrap-width: 50; // 4.5 em
