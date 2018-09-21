@@ -595,7 +595,6 @@
     }
   }
 
-  [feature = 'amenity_parking'][zoom >= 10],
   [feature = 'amenity_bicycle_parking'][zoom >= 10],
   [feature = 'amenity_motorcycle_parking'][zoom >= 10],
   [feature = 'amenity_taxi'][zoom >= 10] {

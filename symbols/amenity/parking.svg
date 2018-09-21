@@ -5,13 +5,13 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   version="1.1"
-   id="svg2"
    viewBox="0 0 14 14"
    height="14"
-   width="14">
+   width="14"
+   id="svg109"
+   version="1.1">
   <metadata
-     id="metadata10">
+     id="metadata115">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -23,16 +23,10 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs8" />
-  <rect
-     width="14"
-     height="14"
-     x="0"
-     y="0"
-     id="canvas"
-     style="fill:none;stroke:none;visibility:hidden" />
+     id="defs113" />
   <path
-     style="fill-rule:evenodd"
      id="path4"
-     d="m 3,1 0,12 1.75,0 0,-5 L 9,8 A 3,3.5 0 0 0 9,1 Z m 1.75,1.75 0,3.5 3.75,0 a 1.58,1.75 0 0 0 0,-3.5 z" />
+     d="M 4 -0.01171875 L 4 9.9882812 L 6 9.9882812 L 6 5.9882812 L 8.3808594 5.9882812 C 11.88536 5.9644962 11.88536 -0.01171875 8.3808594 -0.01171875 L 4 -0.01171875 z M 8 1.9765625 C 9.5728 1.9882625 9.5622 3.9885067 8 3.9882812 L 6 3.9882812 L 6 2 L 8 1.9765625 z M 4 11 L 7 14 L 10 11 L 4 11 z "
+     style="fill-rule:evenodd;stroke-width:0.80562001" />
 </svg>
+
