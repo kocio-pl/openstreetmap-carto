@@ -38,7 +38,7 @@
 
 // --- Other ----
 
-@allotments: #eecfb3;       // Lch(85,19,70)
+@allotments: @grass;
 @bare_ground: #eee5dc;
 @campsite: #def6c0; // also caravan_site, picnic_site
 @cemetery: #aacbaf; // also grave_yard
