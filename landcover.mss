@@ -38,7 +38,7 @@
 
 // --- Other ----
 
-@allotments: @grass;
+@allotments: mix(@grass, @farmland, 50%);
 @bare_ground: #eee5dc;
 @campsite: #def6c0; // also caravan_site, picnic_site
 @cemetery: #aacbaf; // also grave_yard
@@ -302,7 +302,7 @@
       [way_pixels >= 64] { polygon-gamma: 0.3;  }
     }
     [zoom >= 14] {
-      polygon-pattern-file: url('symbols/allotments.png');
+      polygon-pattern-file: url('symbols/plant_nursery.png');
       polygon-pattern-alignment: global;
       [way_pixels >= 4]  { polygon-pattern-gamma: 0.75; }
       [way_pixels >= 64] { polygon-pattern-gamma: 0.3;  }
