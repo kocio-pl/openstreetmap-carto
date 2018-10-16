@@ -52,6 +52,7 @@
 @power-line: darken(@industrial-line, 5%);
 @sand: #f5e9c6;
 @societal_amenities: #ffffe5;   // Lch(99,13,109)
+@cultural: #fbecd7;   // Lch(94,12,80)
 @tourism: #734a08;
 @quarry: #c5c3c3;
 @military: #f55;
@@ -573,6 +574,21 @@
         [zoom >= 13] {
           line-width: 0.3;
           line-color: darken(@societal_amenities, 35%);
+        }
+      }
+      [way_pixels >= 4]  { polygon-gamma: 0.75; }
+      [way_pixels >= 64] { polygon-gamma: 0.3;  }
+    }
+  }
+  
+  [feature = 'tourism_museum'] {
+    [zoom >= 10] {
+      polygon-fill: @residential;
+      [zoom >= 12] {
+        polygon-fill: @cultural;
+        [zoom >= 13] {
+          line-width: 0.3;
+          line-color: darken(@cultural, 35%);
         }
       }
       [way_pixels >= 4]  { polygon-gamma: 0.75; }
