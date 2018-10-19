@@ -1201,10 +1201,31 @@
     marker-clip: false;
   }  
 
-  [feature = 'natural_spring'][zoom >= 14] {
-    marker-file: url('symbols/spring.svg');
-    marker-placement: interior;
-    marker-clip: false;
+  [feature = 'natural_spring'] {
+    ::halo {
+      [zoom >= 14][zoom < 18] {
+        marker-fill: mix(@water-color,white,20%);
+        marker-allow-overlap: true;
+        marker-line-width: 0;
+        marker-width: 7;
+        marker-height: 7;
+        marker-ignore-placement: true;
+      }
+    }
+    ::spring {
+      [zoom >= 14][zoom < 18] {
+        spring/marker-fill: @marina-text;
+        spring/marker-line-width: 0;
+        spring/marker-width: 3;
+        spring/marker-height: 3;
+      }
+      [zoom >= 18] {
+        spring/marker-file: url('symbols/spring.svg');
+        spring/marker-fill: @marina-text;
+        spring/marker-placement: interior;
+        spring/marker-clip: false;
+      }
+    }
   }
 
   [feature = 'power_generator']['generator:source' = 'wind'],
@@ -2030,7 +2051,9 @@
     text-halo-fill: @standard-halo-fill;
     text-placement: interior;
     [feature = 'natural_spring'] {
-      text-dy: 6;
+      text-fill: @marina-text;
+      text-halo-radius: 2;
+      text-dy: 10;
     }
   }
   
