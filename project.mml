@@ -439,7 +439,7 @@ Layer:
           ORDER BY COALESCE(layer,0), way_area DESC
         ) AS buildings
     properties:
-      minzoom: 13
+      minzoom: 14
   - id: tunnels
     class: access
     geometry: linestring
@@ -1453,7 +1453,7 @@ Layer:
                                                   'fuel', 'hospital', 'ice_cream', 'embassy', 'library', 'courthouse', 'townhall', 'parking',
                                                   'bicycle_parking', 'motorcycle_parking', 'pharmacy', 'doctors', 'dentist', 'place_of_worship',
                                                   'police', 'post_box', 'post_office', 'pub', 'biergarten', 'recycling', 'restaurant', 'food_court',
-                                                  'fast_food', 'telephone', 'taxi', 'theatre', 'toilets', 'drinking_water', 'internet_cafe', 
+                                                  'fast_food', 'telephone', 'taxi', 'theatre', 'toilets', 'drinking_water', 'internet_cafe',
                                                   'prison', 'hunting_stand', 'nightclub', 'veterinary', 'social_facility', 'vehicle_inspection',
                                                   'charging_station', 'arts_centre', 'ferry_terminal', 'marketplace', 'waste_disposal', 'shower', 'bbq',
                                                   'nursing_home', 'childcare', 'driving_school', 'casino', 'boat_rental', 'bicycle_repair_station') THEN amenity ELSE NULL END,
@@ -1585,7 +1585,7 @@ Layer:
                                                   'fuel', 'hospital', 'ice_cream', 'embassy', 'library', 'courthouse', 'townhall', 'parking',
                                                   'bicycle_parking', 'motorcycle_parking', 'pharmacy', 'doctors', 'dentist', 'place_of_worship',
                                                   'police', 'post_box', 'post_office', 'pub', 'biergarten', 'recycling', 'restaurant', 'food_court',
-                                                  'fast_food', 'telephone', 'taxi', 'theatre', 'toilets', 'drinking_water', 'internet_cafe', 
+                                                  'fast_food', 'telephone', 'taxi', 'theatre', 'toilets', 'drinking_water', 'internet_cafe',
                                                   'prison', 'hunting_stand', 'nightclub', 'veterinary', 'social_facility', 'vehicle_inspection',
                                                   'charging_station', 'arts_centre', 'ferry_terminal', 'marketplace', 'shower', 'bbq',
                                                   'nursing_home', 'childcare', 'driving_school', 'casino', 'boat_rental', 'bicycle_repair_station') THEN amenity ELSE NULL END,
@@ -2060,8 +2060,8 @@ Layer:
                                                   'grave_yard', 'shelter', 'bank', 'embassy', 'fuel', 'bus_station', 'prison', 'university',
                                                   'school', 'college', 'kindergarten', 'hospital', 'ice_cream', 'pharmacy', 'doctors', 'dentist',
                                                   'atm', 'bicycle_rental', 'bureau_de_change', 'car_rental', 'car_wash', 'post_box', 'post_office',
-                                                  'recycling', 'telephone', 'toilets', 'taxi', 'drinking_water', 'hunting_stand', 'internet_cafe', 
-                                                  'nightclub', 'veterinary', 'social_facility', 'vehicle_inspection', 'charging_station', 'arts_centre', 
+                                                  'recycling', 'telephone', 'toilets', 'taxi', 'drinking_water', 'hunting_stand', 'internet_cafe',
+                                                  'nightclub', 'veterinary', 'social_facility', 'vehicle_inspection', 'charging_station', 'arts_centre',
                                                   'ferry_terminal', 'marketplace', 'shower', 'bbq', 'nursing_home', 'childcare', 'driving_school',
                                                   'casino', 'boat_rental', 'bicycle_repair_station') THEN amenity ELSE NULL END,
               'advertising_' || CASE WHEN tags->'advertising' in ('column') THEN tags->'advertising' else NULL END,
