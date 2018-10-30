@@ -1,4 +1,4 @@
-@admin-boundaries: mix(#0087BD,#000000,35%);
+@admin-boundaries: lighten(mix(#0087BD,#000000,35%),5%);
 
 @admin-simplify: 4;
 @admin-simplify-algorithm: visvalingam-whyatt;
