@@ -1,4 +1,4 @@
-@admin-boundaries: #ac46ac;
+@admin-boundaries: mix(#0087BD,#000000,35%);
 
 @admin-simplify: 4;
 @admin-simplify-algorithm: visvalingam-whyatt;
@@ -199,7 +199,7 @@ overlapping borders correctly.
 #admin-text[zoom >= 16] {
   text-name: "[name]";
   text-face-name: @book-fonts;
-  text-fill: @admin-boundaries;
+  text-fill: lighten(@admin-boundaries,5%);
   text-halo-radius: @standard-halo-radius;
   text-halo-fill: @standard-halo-fill;
   text-placement: line;
