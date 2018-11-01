@@ -1,4 +1,4 @@
-@admin-boundaries: darken(@water-color,30%);
+@admin-boundaries: #51785e;
 
 @admin-simplify: 4;
 @admin-simplify-algorithm: visvalingam-whyatt;
