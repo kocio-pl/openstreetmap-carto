@@ -49,12 +49,16 @@ def generate_colours(settings, section):
     min_h = settings['hue'][0]
     max_h = settings['hue'][1]
 
-    delta_h = (max_h - min_h) / colour_divisions
-    
+    delta_h = float(max_h - min_h) / colour_divisions
+
     h = min_h
     for name in road_classes:
         hues[name] = h
-        h = (h + delta_h) % 360
+        if (hues[name] < 0):
+            hues[name] += 360
+        if (hues[name] > 360):
+            hues[name] -= 360
+        h = (h + delta_h)
 
     # A class to hold information for each line
     ColourInfo = namedtuple("ColourInfo", ["start_l", "end_l", "start_c", "end_c"])
@@ -74,18 +78,23 @@ def generate_colours(settings, section):
         c = params['chroma']
         line_colour_infos[cls] = ColourInfo(start_l = l[0], end_l = l[1], start_c = c[0], end_c = c[1])
 
+    dark_limits = settings['dark-limit']
+
     # Colours for the MSS
     colours = OrderedDict()
 
     for line_name, line_colour_info in line_colour_infos.iteritems():
-        c = line_colour_info.start_c
-        delta_c = (line_colour_info.end_c - line_colour_info.start_c) / colour_divisions
-        l = line_colour_info.start_l
-        delta_l = (line_colour_info.end_l - line_colour_info.start_l) / colour_divisions
+        c = float(line_colour_info.start_c)
+        delta_c = float(line_colour_info.end_c - line_colour_info.start_c) / colour_divisions
+        l = float(line_colour_info.start_l)
+        delta_l = float(line_colour_info.end_l - line_colour_info.start_l) / colour_divisions
 
         colours[line_name] = OrderedDict()
         for name in road_classes:
-            colours[line_name][name] = Color((l, c, hues[name]))
+            l_mod = l
+            if (l < dark_limits[line_name]):
+                l_mod = dark_limits[line_name]
+            colours[line_name][name] = Color((l_mod, c, hues[name]))
             c += delta_c
             l += delta_l
 
