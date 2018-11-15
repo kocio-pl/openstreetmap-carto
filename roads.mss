@@ -1935,7 +1935,7 @@ tertiary is rendered from z10 and is not included in osm_planet_roads. */
           line-dasharray: 5,2;
         }
       }
-      [zoom >= 12] {
+      [zoom >= 11] {
         #roads-fill, #bridges {
           dark/line-join: round;
           light/line-color: white;
