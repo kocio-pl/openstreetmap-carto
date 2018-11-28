@@ -1,4 +1,4 @@
-@admin-boundaries: mix(#ac46ac,#555555,25%);
+@admin-boundaries: #72323f;
 
 @admin-simplify: 4;
 @admin-simplify-algorithm: visvalingam-whyatt;
