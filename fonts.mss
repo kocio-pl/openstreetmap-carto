@@ -177,6 +177,45 @@ regular text and can be used for emphasis. Fallback is a regular style.
                 @book-fonts;
 
 /*
+A semi bold style is heavier than regular text, but lighter than bold style.
+Fallback is a regular style.
+*/
+@semi-bold-fonts:   "Noto Sans SemiBold",
+                    "Noto Sans CJK JP SemiBold",
+                    "Noto Sans Armenian SemiBold",
+                    "Noto Sans Bengali UI SemiBold",
+                    "Noto Sans Cham SemiBold",
+                    "Noto Sans Cherokee SemiBold",
+                    "Noto Sans Devanagari UI SemiBold",
+                    "Noto Sans Ethiopic SemiBold",
+                    "Noto Sans Georgian SemiBold",
+                    "Noto Sans Gujarati UI SemiBold",
+                    "Noto Sans Gurmukhi UI SemiBold",
+                    "Noto Sans Hebrew SemiBold",
+                    "Noto Sans Kannada UI SemiBold",
+                    "Noto Sans Khmer UI SemiBold",
+                    "Noto Sans Lao UI SemiBold",
+                    "Noto Sans Malayalam UI SemiBold",
+                    "Noto Sans Myanmar UI SemiBold",
+                    "Noto Sans Oriya UI SemiBold",
+                    "Noto Sans Sinhala UI SemiBold",
+                    "Noto Sans Sinhala SemiBold",
+                    "Noto Sans Symbols SemiBold",
+                    "Noto Sans Tamil UI SemiBold",
+                    "Noto Sans Telugu UI SemiBold",
+                    "Noto Sans Thaana SemiBold",
+                    "Noto Sans Thai UI SemiBold",
+                    "Noto Sans Tibetan SemiBold",
+
+                    "Noto Sans Arabic UI SemiBold",
+
+                    "Noto Naskh Arabic UI SemiBold",
+
+                    "DejaVu Sans SemiBold",
+
+                    @book-fonts;
+
+/*
 Italics are only available for the base font, not the other scripts.
 For a considerable number of labels this style will make no difference to the regular style.
 */
