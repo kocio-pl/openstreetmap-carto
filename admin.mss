@@ -188,7 +188,7 @@ overlapping borders correctly.
       line-width: 2;
       line-simplify: @admin-simplify;
       line-simplify-algorithm: @admin-simplify-algorithm;
-      line-dasharray: 2,3;
+      line-dasharray: 2,3,2,3,2,12;
       line-clip: false;
     }
   }
