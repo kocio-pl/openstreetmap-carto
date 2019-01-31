@@ -1,7 +1,7 @@
 @placenames: #222;
 @placenames-light: #777777;
 @country-labels: darken(@admin-boundaries, 15%);
-@state-labels: desaturate(darken(@admin-boundaries, 5%), 20%);
+@state-labels: desaturate(darken(@admin-boundaries-level4, 5%), 20%);
 
 .country {
   [zoom >= 3][zoom < 5][way_pixels > 1000],
@@ -35,11 +35,10 @@
       text-line-spacing: -0.7; // -0.05 em
     }
     text-fill: @country-labels;
-    text-face-name: @book-fonts;
+    text-face-name: @bold-fonts;
     text-halo-fill: @standard-halo-fill;
     text-halo-radius: @standard-halo-radius * 1.5;
     text-placement: interior;
-    text-character-spacing: 0.5;
   }
 }
 
